@@ -93,7 +93,7 @@ EXACERBAÇÃO DPOC / ASMA GRAVE:
   1. O2 CONTROLADO 1-2L/min cateter nasal (meta SpO2 88-92% no DPOC)
   2. Salbutamol 5mg + Ipratrópio 0,5mg NBZ — repetir 3x a cada 20min
   3. Dexametasona 10mg IV ou Metilprednisolona 125mg IV
-  4. Se bacteriana: Ceftriaxona 1-2g IV
+  4. Se bacteriana: Ceftriaxona 1-2g IV (apenas se internando; PA = não usar)
   5. Aminofilina 5mg/kg IV em 30min → 0,5mg/kg/h manutenção
   6. Gasometria se SpO2 < 92% após 1ª nebulização
   → TRANSFERÊNCIA: pCO2 > 55mmHg, pH < 7,30, rebaixamento consciência
@@ -237,9 +237,13 @@ BUNDLE 1ª HORA:
   2. Acesso venoso calibroso | Coleta antes dos antibióticos
   3. ANTIBIÓTICO EMPÍRICO EM ATÉ 1H:
      - Foco Pulmonar: Ceftriaxona 2g IV + Azitromicina 500mg IV
+       (APENAS SE INTERNANDO; FORA DA INTERNAÇÃO = encaminhar)
      - Foco Urinário: Ceftriaxona 2g IV (ou Cipro 400mg IV se risco ESBL)
+       (APENAS SE INTERNANDO)
      - Foco Abdominal: Ceftriaxona 1g IV + Metronidazol 500mg IV
+       (APENAS SE INTERNANDO)
      - Sem Foco: Ceftriaxona 2g IV + Metronidazol 500mg IV
+       (APENAS SE INTERNANDO)
   4. Ressuscitação: 30mL/kg SF0,9% ou RL em 3h (≈2000mL para 70kg)
   5. EAS (identificar foco urinário)
 
@@ -298,7 +302,41 @@ BRADICARDIA SINTOMÁTICA:
   3. → TRANSFERÊNCIA para implante de marcapasso
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-[L] PROTOCOLO PEDIÁTRICO (Pediatra deve ser acionado)
+[L] PROTOCOLO 11 — INFECÇÕES SEXUALMENTE TRANSMISSÍVEIS (IST)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+GONORREIA (Neisseria gonorrhoeae):
+  Ceftriaxona 1-2g IV é PERMITIDA e recomendada para tratamento no PA
+  • Dose: Ceftriaxona 1g IV em dose única (ou 2g se epididimite/proctite)
+  • Diluição: Diluir 1g em 10mL SF; administrar IM lento ou IV em 3-5min
+  • Acompanhar com Azitromicina 1g VO dose única (ou 500mg 2x por 3 dias)
+  • EAS para confirmar, teste rápido HIV/sífilis
+  • Parceiro sexual: teste + tratamento
+  • Observação: 2-4h se sintomático grave (dor, febre)
+  • Alta: Orientações + retorno em 7 dias
+
+CLAMÍDIA (Chlamydia trachomatis):
+  • Azitromicina 1g VO dose única (PREFERÊNCIA no PA)
+  • Alt: Doxiciclina 100mg VO 2x por 7 dias (evitar gravidez)
+  • EAS, teste rápido HIV/sífilis
+  • Parceiro: teste + tratamento
+  • Retorno em 7-10 dias
+
+HERPES GENITAL:
+  • Aciclovir 400mg VO 5x/dia por 7-10 dias (episódio agudo)
+  • Se gravidade extrema / primoinfecção grave: Aciclovir IV (internação)
+  • Analgesia: Dipirona ou Paracetamol
+  • Higiene local, banhos com água morna
+  • Retorno se piora
+
+⚠️ NOTA SOBRE CEFTRIAXONA E PA:
+  Ceftriaxona APENAS para:
+  1. Gonorreia (documentado ou suspeita forte com sintomas clássicos)
+  2. Sepse / Choque séptico / Casos que SERÃO INTERNADOS
+  FORA DESSES CENÁRIOS: usar outras opções de cobertura ou encaminhar para internação.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[M] PROTOCOLO PEDIÁTRICO (Pediatra deve ser acionado)
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 FEBRE:
@@ -322,7 +360,7 @@ HOLLIDAY-SEGAR (manutenção EV):
   > 20kg:  1500mL + 20mL/kg para cada kg > 20kg
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-[M] FARMÁCIA DO PA — MEDICAMENTOS DISPONÍVEIS
+[N] FARMÁCIA DO PA — MEDICAMENTOS DISPONÍVEIS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 ANALGÉSICOS/ANTITÉRMICOS: Dipirona 500mg/mL amp | Paracetamol 200mg/mL gt /
@@ -336,7 +374,7 @@ ANTIBIÓTICOS IV: Ceftriaxona 1g/2g amp | Ampicilina+Sulbactam 3g amp |
 
 ANTIBIÓTICOS VO: Amoxicilina 500mg | Amox+Clavulanato 875/125mg |
   Azitromicina 500mg | Ciprofloxacino 500mg | SMX/TMP 400/80mg |
-  Nitrofurantoína 100mg
+  Nitrofurantoína 100mg | Doxiciclina 100mg | Aciclovir 400mg
 
 CARDIOVASCULARES IV: Adrenalina 1mg/mL amp | Norepinefrina 4mg/4mL amp |
   Dopamina 50mg/mL amp | Amiodarona 150mg/3mL amp | Adenosina 6mg/2mL amp |
@@ -372,7 +410,7 @@ SOLUÇÕES: SF0,9% 100/250/500/1000mL | SG5% 100/250/500mL | SG10% 500mL |
   RL 500/1000mL | SG50% 250mL | KCl 19,1% amp | NaHCO3 8,4% amp | AD 10mL
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-[N] CRITÉRIOS ABSOLUTOS DE TRANSFERÊNCIA (Acionar Vaga Zero / SUS Fácil)
+[O] CRITÉRIOS ABSOLUTOS DE TRANSFERÊNCIA (Acionar Vaga Zero / SUS Fácil)
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
   • IAMCSST / IAMSST instável → Hemodinâmica
