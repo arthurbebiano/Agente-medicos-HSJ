@@ -1,4 +1,5 @@
 """
+db.py
 Gerenciamento do banco de dados local (pacientes.json).
 ID gerado via: SHA1(INICIAIS + TIMESTAMP_ms + PEPPER)[:8]
 """
