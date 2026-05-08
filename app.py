@@ -511,28 +511,48 @@ def render_form():
 
         st.divider()
 
+        # ── ACOMPANHANTE ───────────────────────────────────────
+        st.markdown("#### 👥 Acompanhante")
+        ac1, ac2 = st.columns([1.5, 2.5])
+        with ac1:
+            tem_acompanhante = st.radio("Acompanhado?", ["Sim", "Não"], horizontal=True)
+        with ac2:
+            acompanhante_nome = st.text_input(
+                "Nome do acompanhante",
+                placeholder="Mãe, cônjuge, cuidador, etc.",
+                disabled=(tem_acompanhante == "Não"),
+            ) if tem_acompanhante == "Sim" else ""
+
+        st.divider()
+
         # ── AVALIAÇÃO CLÍNICA ──────────────────────────────────
-        st.markdown("#### 🩺 Avaliação Clínica")
-        queixa = st.text_input(
-            "Queixa Principal *",
-            placeholder="Ex: Dor torácica em aperto, há 3h, irradiando para MSE",
-        )
+        st.markdown("#### 🩺 Avaliação Clínica — HMA Detalhada")
         hma = st.text_area(
-            "História da Moléstia Atual (HMA) *",
+            "História da Moléstia Atual (HMA) — COMPLETA *",
             placeholder=(
-                "Descreva: início, duração, característica, intensidade (0-10), "
-                "fatores de melhora e piora, sintomas associados (febre, náusea, dispneia, etc.), "
-                "evolução e tratamentos prévios já realizados..."
+                "Descreva DETALHADAMENTE:\n\n"
+                "• QUANDO começou (data/hora) e como começou (súbito/gradual)?\n"
+                "• CARACTERES DO SINTOMA: qualidade exata, intensidade (0-10), localização, irradia para onde?\n"
+                "• PIORA COM: esforço, posição, movimento, alimentação? MELHORA COM: repouso, medicação, posição?\n"
+                "• SINTOMAS ASSOCIADOS: febre, suor, náusea, vômito, tosse, falta de ar, tontura, fraqueza?\n"
+                "• DURAÇÃO E PADRÃO: contínuo ou episódios? Frequência? Mudanças ao longo do tempo?\n"
+                "• O QUE JÁ TOMOU e como respondeu?\n"
+                "• CONTEXTO: exposição a doentes, viagens, imobilização, cirurgias recentes?"
             ),
-            height=140,
+            height=200,
         )
+
         hpp = st.text_area(
-            "HPP / Medicações em Uso / Alergias",
+            "HPP / Medicações em Uso / Alergias / Hábitos",
             placeholder=(
-                "Comorbidades (HAS, DM, ICC, etc.), medicamentos com dose, "
-                "cirurgias prévias, internações, alergias conhecidas..."
+                "• DOENÇAS PRÉVIAS: HAS, DM, problemas cardíacos, renais, pulmonares, imunossupressão?\n"
+                "• MEDICAMENTOS ATUAIS: nome, dose, frequência\n"
+                "• ALERGIAS: a qual medicamento? Que tipo de reação?\n"
+                "• CIRURGIAS/INTERNAÇÕES: datas e motivos\n"
+                "• HÁBITOS: tabagismo (quantos/dia), álcool (frequência), drogas ilícitas?\n"
+                "• HISTÓRIA SEXUAL: parceiros, métodos contraceptivos (se relevante para este caso)"
             ),
-            height=90,
+            height=130,
         )
 
         st.divider()
@@ -552,14 +572,22 @@ def render_form():
 
         # ── EXAME FÍSICO ───────────────────────────────────────
         st.markdown("#### 🔍 Exame Físico")
+        st.caption(
+            "Descreva achados sistematizados: estado geral, consciência, ausculta cardíaca/pulmonar, "
+            "abdome, MMII, sinais neurológicos. A IA vai gerar o exame físico ESPERADO para este caso."
+        )
         exame_fisico = st.text_area(
-            "Achados do Exame Físico",
+            "Achados do Exame Físico Realizado",
             placeholder=(
-                "Estado geral (BEG/REG/MEG), consciência (Glasgow/orientação), "
-                "ausculta cardíaca e pulmonar, abdome (RHA, dor, defesa), "
-                "MMII (edema, pulsos), perfusão, dados neurológicos..."
+                "Ex:\n"
+                "Estado geral: Bom, lúcido, corado, orientado, hidratado, afebril\n"
+                "Cardiovascular: Ritmo regular, sem sopros, TEC < 2s\n"
+                "Respiratório: Sons normais, eupneico, sem desconforto\n"
+                "Abdome: Normotenso, indolor, RHA presentes\n"
+                "Neurológico: Glasgow 15, pupilas normais, sem deficits\n"
+                "MMII: Sem edema, pulsos presentes, simétricos"
             ),
-            height=110,
+            height=120,
         )
 
         st.divider()
@@ -571,24 +599,27 @@ def render_form():
             "HGT · ECG · Radiografia · TC sem contraste"
         )
         exames = st.text_area(
-            "Resultados",
+            "Resultados dos Exames",
             placeholder=(
                 "Ex:\n"
                 "ECG: Ritmo sinusal, FC 88bpm, sem supra/infra ST.\n"
                 "Troponina: 0,01 ng/mL (Ref < 0,04)\n"
                 "Gasometria: pH 7,38 | pCO2 40 | pO2 82 | HCO3 24 | BE 0 | "
-                "K+ 4,0 | Na+ 138 | Lactato 1,2 | Glicose 105\n"
-                "RX Tórax: Sem consolidações, ICT dentro do normal."
+                "K+ 4,0 | Na+ 138 | Cl- 102 | Lactato 1,2 | Glicose 105 | Hb/Ht 14,0/42%\n"
+                "EAS: Transparente, negativo para proteína e glicose, sem piúria\n"
+                "RX Tórax: Sem consolidações, índice cardiotorácico dentro do normal."
             ),
-            height=130,
+            height=120,
         )
+
         info_extra = st.text_area(
             "Contexto / Informações Adicionais",
             placeholder=(
-                "Ex: Gestante 28 semanas. Uso de cocaína há 2 dias. "
-                "Imunossuprimido. Morador de rua. Veio sozinho..."
+                "Informações epidemiológicas ou clínicas que contextualizam o caso:\n"
+                "Ex: Gestante 28 semanas. Contato com tuberculose há 2 semanas. "
+                "Morador de rua. Veio sozinho. Quadro semelhante há 3 meses."
             ),
-            height=65,
+            height=80,
         )
 
         st.divider()
@@ -606,8 +637,8 @@ def render_form():
         errors = []
         if not nome.strip():
             errors.append("Nome do paciente")
-        if not queixa.strip():
-            errors.append("Queixa principal")
+        if not idade.strip():
+            errors.append("Idade")
         if not hma.strip():
             errors.append("HMA")
 
@@ -625,27 +656,28 @@ def render_form():
             f"Peso: {sv_vals['sv_peso'] or 'NI'} kg"
         )
 
+        acompanhante_info = (
+            f"Sim — {acompanhante_nome}" if tem_acompanhante == "Sim"
+            else "Não — paciente veio sozinho"
+        )
+
         prompt_text = f"""NOVO ATENDIMENTO — PA CLÍNICA MÉDICA — HOSPITAL GERAL SÃO JOSÉ
 
 ═══════════════════════════════════════════
 IDENTIFICAÇÃO
 ═══════════════════════════════════════════
-Nome:  {nome.strip()}
-Idade: {idade.strip() or "Não informada"}
-Sexo:  {sexo}
+Nome:        {nome.strip()}
+Idade:       {idade.strip()}
+Sexo:        {sexo}
+Acompanhante: {acompanhante_info}
 
 ═══════════════════════════════════════════
-QUEIXA PRINCIPAL
-═══════════════════════════════════════════
-{queixa.strip()}
-
-═══════════════════════════════════════════
-HISTÓRIA DA MOLÉSTIA ATUAL
+HISTÓRIA DA MOLÉSTIA ATUAL (HMA)
 ═══════════════════════════════════════════
 {hma.strip()}
 
 ═══════════════════════════════════════════
-HPP / MEDICAÇÕES / ALERGIAS
+HPP / MEDICAÇÕES / ALERGIAS / HÁBITOS
 ═══════════════════════════════════════════
 {hpp.strip() or "Não informado"}
 
@@ -655,7 +687,7 @@ SINAIS VITAIS
 {vitais_str}
 
 ═══════════════════════════════════════════
-EXAME FÍSICO
+EXAME FÍSICO (REALIZADO)
 ═══════════════════════════════════════════
 {exame_fisico.strip() or "Não realizado / Não informado"}
 
@@ -665,12 +697,18 @@ EXAMES REALIZADOS E RESULTADOS
 {exames.strip() or "Nenhum exame realizado neste momento"}
 
 ═══════════════════════════════════════════
-INFORMAÇÕES ADICIONAIS / CONTEXTO
+CONTEXTO / INFORMAÇÕES ADICIONAIS
 ═══════════════════════════════════════════
 {info_extra.strip() or "Nenhuma informação adicional"}
 
-Por favor, realize a avaliação clínica completa no formato XML definido,
-adaptando TODA conduta às limitações específicas deste PA."""
+INSTRUÇÕES PARA A IA:
+──────────────────────────────────────────
+1. Complete a HISTÓRIA CLÍNICA com o máximo de detalhe (HMA_BOX)
+2. Gere um EXAME FÍSICO ESPERADO para este caso (esperado_section dentro de exame_fisico_box)
+3. Realize avaliação clínica COMPLETA no formato XML definido
+4. Adapte TODA conduta às limitações específicas deste PA
+5. A HMA NO PRONTUÁRIO DEVE SER EXPANDIDA E ESTRUTURADA (OPQRST + sintomas associados)
+"""
 
         with st.spinner("🤖 Processando avaliação clínica... Aguarde."):
             history = [{"role": "user", "parts": [prompt_text]}]
@@ -684,9 +722,9 @@ adaptando TODA conduta às limitações específicas deste PA."""
             history.append({"role": "model", "parts": [ai_response]})
 
             dados_extras = {
-                "queixa": queixa.strip(),
                 "idade": idade.strip(),
                 "sexo": sexo,
+                "acompanhante": acompanhante_info,
                 "vitais_iniciais": vitais_str,
             }
             pid = db.criar_paciente(nome.strip(), history, dados_extras)
