@@ -91,75 +91,89 @@ Para cada caso, raciocine em três horizontes de tempo:
   Não há vergonha nisso. É o fluxo correto desta unidade.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-PROTOCOLO 01 — DOR TORÁCICA E SÍNDROME CORONARIANA AGUDA
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PROTOCOLO 01 — DOR TORÁCICA E SÍNDROME CORONÁRIA AGUDA (SCA)
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-ECG obrigatório nos primeiros 10 minutos de qualquer dor torácica.
-Troponina disponível imediatamente — coletar no primeiro contato.
+A prioridade é o tempo: ECG obrigatório nos primeiros 10 minutos de qualquer dor torácica.
+Troponina quantitativa POC disponível imediatamente — colher no primeiro contacto.
 
-IAMCSST (supra ST ≥ 1mm em ≥ 2 derivações contíguas ou BRE novo):
-  Oxigênio máscara/cateter APENAS se SpO2 < 90%.
-  Morfina 2-4mg IV se dor refratária e PAS > 90mmHg (evitar se possível, reduz absorção de antiplaquetários).
-  Nitrato 0,4mg SL se PAS > 90mmHg, repetir 3x a cada 5min (evitar se infarto de VD ou uso de sildenafila).
-  AAS 300mg VO mastigado.
-  Clopidogrel 300mg VO (ou 600mg se for submetido a angioplastia primária imediata e idade < 75).
-  HNF bolus 60 UI/kg IV (máx 4000 UI) + infusão 12 UI/kg/h.
-  ACIONAR VAGA ZERO PARA HEMODINÂMICA DE IMEDIATO.
+IAMCSST (Infarto com Supra de ST ≥ 1mm em ≥ 2 derivações contíguas ou BRE novo):
+  >>> ACIONAR VAGA ZERO PARA HEMODINÂMICA DE IMEDIATO.
+  
+  Oxigénio: Máscara/cateter APENAS se SpO2 < 90% ou franco desconforto respiratório.
+  AAS: 300mg VO mastigado (ação rápida).
+  Clopidogrel: 
+    - < 75 anos: 300mg VO (ou 600mg se for direto para angioplastia primária).
+    - ≥ 75 anos: 75mg VO (sem dose de carga).
+  Anticoagulação (Enoxaparina é preferível à HNF no PA pela facilidade):
+    - < 75 anos: 30mg IV em bolus RÁPIDO, seguido de 1mg/kg SC de 12/12h.
+    - ≥ 75 anos: SEM bolus IV. Apenas 0,75mg/kg SC de 12/12h.
+  Nitrato (Isossorbida 5mg SL ou Nitroglicerina IV):
+    - CONTRAINDICAÇÕES ABSOLUTAS: PAS < 90 mmHg, Frequência Cardíaca < 50 ou > 100 bpm, 
+      uso de inibidores da fosfodiesterase (Sildenafila nas últimas 24h ou Tadalafila em 48h),
+      ou suspeita de Enfarte de Ventrículo Direito (supra de parede inferior: DII, DIII, aVF 
+      -> obrigatório fazer V3R e V4R antes do nitrato).
+  Morfina (2-4mg IV): 
+    - EVITAR POR ROTINA. Atrasa a absorção dos antiagregantes. 
+    - Usar estritamente para dor excruciante refratária ao nitrato, com estabilidade hemodinâmica.
 
-IAMSST / NSTEMI (troponina elevada ou ECG com alterações isquêmicas):
+IAMSST / NSTEMI (Sem supra, mas com troponina elevada ou alterações isquémicas):
   AAS 300mg mastigado + Clopidogrel 300mg VO.
-  Enoxaparina 1mg/kg SC de 12/12h.
-  Troponina seriada 0h e 3h.
-  Transferência urgente se troponina positiva, dor refratária ou instabilidade.
-  Se troponina negativa em 2 coletas e ECG sem isquemia aguda: alta com
-  encaminhamento urgente para cardiologia ambulatorial.
+  Enoxaparina 1mg/kg SC de 12/12h (Ajuste: se CrCl < 30, fazer 1mg/kg SC 1x ao dia / 24h).
+  Troponina seriada (0h e 1-3h).
+  Transferência urgente para cardiologia se troponina positiva, dor refratária, ou instabilidade clínica.
+  Se troponina negativa nas coletas seriadas e ECG sem isquémia aguda: avaliar Score HEART para alta.
 
-Dor torácica de baixo risco (HEART score ≤ 3):
-  Observação 3-6h, troponina seriada.
-  Alta com orientações e retorno ambulatorial se troponinas negativas.
+Dor torácica de baixo risco (Score HEART ≤ 3):
+  Observação 3-6h com troponina seriada. 
+  Alta com orientações e retorno ambulatorial (teste de isquémia eletivo) se resultados negativos.
+
+ALERTA DE DIAGNÓSTICO DIFERENCIAL (Dissecção da Aorta):
+  Dor torácica "rasgante" irradiada para o dorso + assimetria de pulsos ou de PA nos membros.
+  NÃO DAR AAS OU ANTICOAGULANTE. Controlo rigoroso da FC e PA (Esmolol ou Metoprolol IV + Nitroprussiato).
+  TRANSFERÊNCIA PRIORIDADE VAGA 0.
+
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-PROTOCOLO 02 — TROMBOEMBOLIA PULMONAR E TVP (COM DÍMERO-D DISPONÍVEL)
+PROTOCOLO 02 — TROMBOEMBOLIA PULMONAR (TEP) E TVP
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Score de Wells para TEP — calcule sempre que suspeitar:
-  Sinais clínicos de TVP: +3
+Neste PA, a TC é SEM contraste (baixa sensibilidade para TEP). Dependemos criticamente da clínica (Score de Wells) e do Dímero-D (POC) para decidir quem tratar ou transferir.
+
+PASSO 1: AVALIAR O RISCO CLÍNICO PARA TEP (Score de Wells)
+  Sinais clínicos de TVP (edema assimétrico, dor à palpação): +3
   TEP mais provável que diagnóstico alternativo: +3
-  FC > 100bpm: +1,5
-  Imobilização ou cirurgia nas últimas 4 semanas: +1,5
+  Frequência Cardíaca > 100 bpm: +1,5
+  Imobilização (> 3 dias) ou cirurgia nas últimas 4 semanas: +1,5
   TVP ou TEP prévia documentada: +1,5
   Hemoptise: +1
   Neoplasia ativa (em tratamento ou nos últimos 6 meses): +1
 
-  Wells ≤ 4 (baixa probabilidade): Solicitar Dímero-D.
-    Dímero-D negativo → TEP improvável → investigar diagnóstico alternativo.
-    Dímero-D positivo → investigação adicional necessária.
-    TC de tórax SEM contraste tem baixa sensibilidade para TEP.
-    Se forte suspeita clínica com dímero positivo: anticoagulação empírica
-    + transferência para TC com contraste (AngioTC) ou cintilografia.
+PASSO 2: A REGRA "PERC" (Para casos com baixa suspeição inicial - "gestalt" negativa)
+  Se o paciente tiver risco muito baixo e for NEGATIVO para TODOS os 8 critérios abaixo, o TEP está excluído (NÃO PEÇA Dímero-D):
+  - Idade ≥ 50 anos; FC ≥ 100; SpO2 < 95%; Hemoptise; Estrogénios/Anticoncecionais; TVP/TEP prévia; Cirurgia/Trauma recente; Edema unilateral.
 
-  Wells > 4 (alta probabilidade): Dímero-D não é útil aqui.
-    Anticoagulação empírica imediata: Enoxaparina 1mg/kg SC de 12/12h.
-    Transferência para confirmação por imagem adequada.
-    Se instabilidade hemodinâmica (TEP maciça/PAS < 90): suporte hemodinâmico,
-    trombólise sistêmica se disponível e sem contraindicações antes de transferir.
+PASSO 3: CONDUTA BASEADA NO WELLS
+  Wells ≤ 4 (Baixa/Moderada Probabilidade): SOLICITAR DÍMERO-D POC.
+    Dímero-D Negativo: TEP excluído. Investigar outras causas (muscular, ansiedade, refluxo).
+    Dímero-D Positivo: Necessita de AngioTC. Como a TC local não tem contraste, iniciar anticoagulação empírica (Enoxaparina 1mg/kg SC) e TRANSFERIR.
 
-Score de Wells para TVP:
-  Neoplasia ativa: +1
-  Paralisia, paresia ou imobilização recente de MMII: +1
-  Acamado > 3 dias ou cirurgia nas últimas 12 semanas: +1
-  Dor localizada ao longo do trajeto venoso profundo: +1
-  Edema de toda a perna: +1
-  Edema de panturrilha > 3cm comparado ao contralateral: +1
-  Edema depressível apenas no membro sintomático: +1
-  Colaterais venosas superficiais (não varicosas): +1
-  Diagnóstico alternativo pelo menos tão provável: -2
+  Wells > 4 (Alta Probabilidade): O DÍMERO-D NÃO É ÚTIL.
+    O resultado do Dímero-D (mesmo se falso-negativo) não anula o risco clínico.
+    Conduta imediata: Anticoagulação empírica (Enoxaparina 1mg/kg SC 12/12h) e TRANSFERÊNCIA IMEDIATA para hospital com AngioTC.
 
-  Score ≤ 1: baixa probabilidade → Dímero-D.
-    Dímero-D negativo → TVP improvável.
-    Dímero-D positivo → US doppler (não disponível aqui) → transferência.
-  Score ≥ 2: probabilidade moderada a alta → anticoagular empiricamente +
-    transferência para US doppler venoso.
+PASSO 4: TEP MACIÇO (Instabilidade Hemodinâmica)
+  Definição: TEP suspeito + PAS < 90 mmHg ou queda > 40 mmHg.
+  É uma emergência de altíssima mortalidade. 
+  Conduta: Suporte hemodinâmico com Noradrenalina (se choque). Se forte suspeita clínica ou sinais de disfunção de Ventrículo Direito no Ecocardiograma (se disponível POC), e sem contraindicações absolutas: ponderar TROMBÓLISE SISTÉMICA (Alteplase 100mg IV em 2 horas) antes ou durante a transferência (Vaga Zero).
+
+SCORE DE WELLS PARA TVP (Trombose Venosa Profunda):
+  Neoplasia ativa (+1); Paresia/imobilização de membro inferior (+1); Acamado > 3 dias ou cirurgia major recente (+1); Dor em trajeto venoso profundo (+1); Edema de toda a perna (+1); Edema de gémeos > 3cm que a perna oposta (+1); Edema depressível unilateral (+1); Veias superficiais colaterais visíveis (+1); Diagnóstico alternativo tão ou mais provável (-2).
+
+  Score ≤ 1 (Baixa probabilidade) -> Dímero-D. 
+    Se negativo = TVP excluída. Se positivo = Transferir para Eco-Doppler.
+  Score ≥ 2 (Alta probabilidade) -> Anticoagulação empírica + Transferir para Eco-Doppler venoso.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 PROTOCOLO 03 — DISPNEIA AGUDA
@@ -225,6 +239,8 @@ Plantonista avalia TC: Sangramento é hiperdenso (branco). Isquemia inicial pode
 PROTOCOLO 06 — GRAVIDEZ, BETA-hCG E EMERGÊNCIAS OBSTÉTRICAS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
+A princípio, encaminhar paciente para serviço com assistência obstétrica.
+
 Beta-hCG rápido obrigatório em toda mulher em idade fértil com:
   Dor abdominal/pélvica inexplicada, sangramento vaginal, síncope/hipotensão.
 
@@ -249,7 +265,7 @@ Dengue Grupo A (Sem sinais de alarme, sem comorbidades/risco):
   Hidratação VO generosa (adultos 60ml/kg/dia, sendo 1/3 SRO).
   Paracetamol ou Dipirona. NUNCA AAS ou AINEs. Alta para UBS.
 
-Dengue Grupo B (Sem sinais de alarme, MAS com sangramento de pele/comorbidades/gestante):
+Dengue Grupo B (Sem sinais de alarme, MAS com sangramento de pele, comorbidades ou gestante):
   Hemograma obrigatório. Hidratação VO ou IV supervisionada enquanto aguarda.
 
 Dengue Grupo C (Com sinais de alarme):
@@ -264,19 +280,60 @@ Dengue Grupo D (Dengue Grave/Choque):
   Acionar transferência para UTI urgente.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-PROTOCOLO 08 — INFLUENZA E SÍNDROME GRIPAL
+PROTOCOLO 08 — SÍNDROME GRIPAL (INFLUENZA E COVID-19)
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Teste rápido para Influenza (swab) se disponível para pacientes de risco.
+A Síndrome Gripal é caracterizada por quadro febril de início súbito, acompanhado de tosse ou dor de garganta, e pelo menos um dos seguintes sintomas: cefaleia, mialgia ou artralgia.
 
-Pacientes de Risco (Idosos > 60, crianças < 5, gestantes, puérperas, imunodeprimidos,
-cardiopatas, pneumopatas, obesidade IMC > 40) OU com SRAG (Síndrome Respiratória Aguda Grave):
-  Oseltamivir 75mg VO 12/12h por 5 dias. MAIOR benefício se iniciado nas primeiras 48h.
-  NÃO aguardar resultado de teste para iniciar Oseltamivir se alta suspeição e paciente grave/risco.
-  Tratamento de suporte. Avaliar Gasometria e RX se SRAG (SpO2 < 93%, taquipneia).
+TESTES RÁPIDOS: Realizar teste para COVID-19 e Influenza (swab) se disponíveis, prioritariamente em pacientes de risco ou com SRAG. NÃO atrasar a decisão clínica ou o início de tratamento empírico em casos graves aguardando resultados.
 
-Pacientes fora do grupo de risco sem sinais de gravidade:
-  Tratamento puramente sintomático. Alta com orientações.
+====================================================================
+1. MANEJO SINTOMÁTICO E SUPORTE UNIVERSAL (PARA TODOS OS CASOS)
+====================================================================
+- Antitérmicos e Analgésicos: Dipirona ou Paracetamol.
+- Hidratação: Ingestão hídrica generosa oral.
+- LAVAGEM NASAL COM SORO FISIOLÓGICO: 
+  * Medida não farmacológica FUNDAMENTAL para alívio sintomático, redução do gotejamento pós-nasal (que piora a tosse) e prevenção de sinusite/otite bacterianas secundárias.
+  * Prescrever ativamente: Orientar o paciente (ou cuidadores) a realizar lavagens de alto volume usando seringa de 20mL ou garrafinhas próprias (ex: NoseWash), com a cabeça levemente inclinada para a frente, várias vezes ao dia. Evitar pressão excessiva.
+- Isolamento: Orientar afastamento laboral/escolar e medidas de etiqueta respiratória.
+
+====================================================================
+2. ANTIVIRAL PARA INFLUENZA: OSELTAMIVIR (Tamiflu)
+====================================================================
+Indicação: Iniciar de forma empírica e PRECOCE (ideal < 48h) para os seguintes grupos, com ou sem teste:
+
+A. Pacientes com SRAG (Síndrome Respiratória Aguda Grave):
+   - Dispneia, desconforto respiratório ou SpO2 < 93% em ar ambiente.
+   
+B. Pacientes com Fatores de Risco (mesmo se Síndrome Gripal leve):
+   - Idosos (≥ 60 anos) e Crianças < 5 anos.
+   - Gestantes e puérperas (até 2 semanas).
+   - Imunossuprimidos e portadores de comorbidades crônicas (Pneumopatias, Cardiopatias, Nefropatias, Hepatopatias, Neurológicas).
+   - Obesos mórbidos (IMC ≥ 40).
+
+Dose: Adultos: 75 mg VO 12/12h por 5 dias. (Ajustar para crianças por peso e em insuficiência renal grave).
+
+====================================================================
+3. ANTIVIRAL PARA COVID-19: NIRMATRELVIR + RITONAVIR (NMV/r)
+====================================================================
+Indicação Estrita (Conforme Nota Técnica local de BH): 
+O uso NÃO é para pacientes internados por COVID-19 grave. É uma medicação ambulatorial para EVITAR a progressão.
+
+Critérios (TODOS devem ser preenchidos):
+1. Diagnóstico CONFIRMADO de COVID-19 (Teste Rápido Antígeno ou RT-PCR positivo).
+2. Sintomas LEVES a MODERADOS (paciente NÃO necessita de oxigênio suplementar).
+3. Início dos sintomas há, no máximo, 5 DIAS.
+4. Paciente pertence a um grupo de ALTO RISCO:
+   - Imunossuprimidos com idade ≥ 18 anos.
+   - Pessoas com idade ≥ 65 anos.
+
+Atenção: A dispensação exige preenchimento de formulário específico da Secretaria de Saúde e verificação rigorosa de INTERAÇÕES MEDICAMENTOSAS (o Ritonavir é um potente inibidor do CYP3A4, contraindicando o uso com amiodarona, sinvastatina, colchicina, clopidogrel, entre muitos outros).
+
+====================================================================
+4. PACIENTES FORA DOS GRUPOS DE RISCO
+====================================================================
+- Oseltamivir e Nirmatrelvir/Ritonavir NÃO estão indicados de rotina para quadros leves em pacientes sem fatores de risco.
+- Alta com medidas do item 1 (Sintomáticos + Lavagem Nasal) e orientações claras de retorno se sinais de alarme (falta de ar, piora da febre após o 3º dia).
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 PROTOCOLO 09 — ANAFILAXIA
@@ -339,41 +396,97 @@ Transferência urgente para UTI em casos graves (pH < 7,0, rebaixamento).
 PROTOCOLO 12 — SEPSE E CHOQUE SÉPTICO
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Triagem rápida: NEWS ou qSOFA (FR ≥ 22, Glasgow < 15, PAS ≤ 100).
-Disfunção confirmada por Lactato ≥ 2 mmol/L na gasometria.
-NÃO AGUARDAR HEMOGRAMA/PCR PARA INICIAR TRATAMENTO.
+A sepse é uma emergência médica tempo-dependente. A cada hora de atraso no antibiótico, a mortalidade aumenta cerca de 8%. 
+Neste PA, o seu "laboratório de sepse" nas primeiras 3 horas é EXCLUSIVAMENTE a clínica, a gasometria (Lactato) e o EAS fita. NÃO AGUARDE o hemograma ou PCR externos para iniciar a intervenção.
 
-Pacote da 1ª Hora:
-  1. Coletar Gasometria (Lactato).
-  2. Coletar culturas (Hemocultura se disponível, EAS se foco urinário).
-  3. Antibioticoterapia Empírica Ampla IMEDIATA (Não atrasar se falha na cultura):
-     Foco Pulmonar: Ceftriaxona 2g IV + Azitromicina 500mg IV.
-     Foco Urinário: Ceftriaxona 2g IV (ou Ciprofloxacino se anafilaxia).
-     Foco Abdominal: Ceftriaxona 1g IV + Metronidazol 500mg IV.
-     Foco Indefinido: Ceftriaxona 2g IV + Metronidazol (cobrir gram-negativos, anaeróbios).
-  4. Ressuscitação Volêmica: 30 mL/kg de Cristaloides (SF0,9% ou Ringer) nas primeiras 3h se hipotensão ou lactato elevado.
+PASSO 1: RECONHECIMENTO (O ALARME CLÍNICO)
+  Suspeita de Infecção + Sinais de Disfunção Orgânica = SEPSE.
+  - Sinais Rápidos (qSOFA/NEWS): FR ≥ 22 irpm, Glasgow < 15, PAS ≤ 100 mmHg.
+  - Sinais de Hipoperfusão (Exame Físico): Tempo de enchimento capilar > 3 segundos, pele mosqueada/fria, oligúria, taquicardia inexplicada.
+  - O MARCADOR PADRÃO-OURO NO PA: Lactato na gasometria.
+    Lactato > 2 mmol/L = Disfunção (Sepse).
+    Lactato > 4 mmol/L = Gravidade Extrema (Risco altíssimo de Choque Criptogênico).
 
-Choque Séptico: PAS < 90 ou PAM < 65 APÓS expansão inicial de 30mL/kg.
-  Iniciar Vasopressor: Norepinefrina (0,01 a 3 mcg/kg/min).
-  Meta: PAM ≥ 65 mmHg. Transferência Imediata UTI.
+PASSO 2: O "PACOTE DA PRIMEIRA HORA" (ADAPTADO À REALIDADE LOCAL)
+  Aja simultaneamente nos primeiros 60 minutos da admissão:
 
+  1. COLETA DE EXAMES ESSENCIAIS: Gasometria (lactato, acidose metabólica), EAS fita (se suspeita urinária).
+  2. HEMOCULTURAS: Solicite a coleta de 2 pares ANTES do antibiótico. 
+     REGRA DE OURO LOCAL: Se a coleta das culturas for demorar mais de 45 minutos (ex: acesso difícil, sobrecarga da enfermagem), NÃO ATRASAR A DOSE. Faça o antibiótico imediatamente, a vida tem precedência sobre a cultura.
+  3. RESSUSCITAÇÃO VOLÊMICA: 30 mL/kg de Cristaloides nas primeiras 3 horas.
+     - Dê preferência ao Ringer Lactato (o excesso de SF 0,9% causa acidose hiperclorêmica, que confunde a sua reavaliação gasométrica).
+     - Se o paciente for nefropata ou cardiopata grave, faça alíquotas de 250-500 mL e reavalie os pulmões (estertores) a cada infusão. A sepse mata mais rápido que a congestão pulmonar aguda.
+  4. ANTIBIOTICOTERAPIA EMPÍRICA (Amplo Espectro IV Imediato):
+     - Foco Pulmonar (Pneumonia Grave): Ceftriaxona 2g IV + Azitromicina 500mg IV.
+     - Foco Urinário: Ceftriaxona 2g IV (Ciprofloxacino 400mg IV apenas em caso de anafilaxia a betalactâmicos ou histórico de ESBL).
+     - Foco Abdominal (Perfuração, Colecistite grave): Ceftriaxona 1g IV + Metronidazol 500mg IV.
+     - Foco Cutâneo/Partes Moles (Erisipela bolhosa, fasceíte): Cefazolina 1g IV de 8/8h + Clindamicina 600mg IV de 6/6h. Se suspeita de MRSA: Vancomicina IV.
+     - FOCO INDEFINIDO COM CHOQUE: Ceftriaxona 2g IV + Metronidazol 500mg IV (cobre Gram-negativos e anaeróbios).
+
+PASSO 3: MANEJO DO CHOQUE SÉPTICO
+  Definição: Necessidade de vasopressor para manter PAM ≥ 65 mmHg E Lactato > 2 mmol/L, APÓS a expansão volêmica adequada.
+  - DROGA DE ESCOLHA: Norepinefrina 0,01 a 3 mcg/kg/min IV.
+  - Diluição Padrão: 4 ampolas (16mg) em 250mL de SG5% = 64 mcg/mL. Iniciar a 5-10 mL/h em bomba de infusão.
+  - MACETE DE PA: Não espere terminar os 30 mL/kg de Ringer para ligar a Nora se o paciente estiver profundamente chocado (PAS < 70, bradipsiquismo). Ligue a Nora de forma precoce EM ACESSO PERIFÉRICO CALIBROSO (antecubital) até que seja possível passar um Acesso Venoso Central. É seguro por algumas horas e salva o cérebro/rins.
+  - Corticoide: Se o choque for REFRATÁRIO (exigindo doses crescentes de Nora apesar do volume), inicie Hidrocortisona 200 mg/dia (50 mg IV 6/6h).
+
+PASSO 4: REAVALIAÇÃO E TRANSFERÊNCIA
+  - Meta de 2 a 3 horas: Reavaliar o enchimento capilar (deve estar < 3 seg) e coletar nova Gasometria. O objetivo é o "Clearance de Lactato" (queda de pelo menos 10-20% em relação ao lactato inicial).
+  - Controle de Foco: Se a suspeita for abscesso, obstrução biliar, isquemia mesentérica ou litíase ureteral obstrutiva infectada, o antibiótico não resolverá sozinho. O cirurgião precisa atuar nas primeiras 6 a 12h.
+  - Ancoragem: Pacientes em sepse grave/choque devem ser prontamente inseridos no sistema de regulação (Vaga Zero para UTI), mantendo todo o suporte de hemodinâmica e antibióticos rodando sem interrupção no PA.
+  
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 PROTOCOLO 13 — DOR ABDOMINAL AGUDA
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Beta-hCG Fita obrigatório para mulheres em idade fértil (Protocolo 06).
+PASSO 1: TRIAGEM DE SINAIS DE ALARME (RED FLAGS)
+A prioridade no PA não é o diagnóstico exato imediato, mas identificar o "Abdome Cirúrgico" ou catástrofes vasculares:
+  1. Instabilidade hemodinâmica (Hipotensão, taquicardia inexplicada, sudorese).
+  2. Sinais de Peritonite (Abdome em tábua, dor à percussão, descompressão brusca dolorosa/Blumberg).
+  3. Dor súbita, excruciante e de forte intensidade no início (sugere perfuração de víscera, ruptura de aneurisma, isquemia mesentérica).
+  4. Dor desproporcional ao exame físico (Abdome inocente à palpação, mas paciente urrando de dor = Isquemia Mesentérica até prova em contrário, especialmente em idosos/fibriladores).
+  >>> CONDUTA SE ALARME: 2 acessos calibrosos, expansão com Ringer/SF, analgesia agressiva, dieta zero, solicitar avaliação IMEDIATA do cirurgião presencial ou regulação via VAGA ZERO.
 
-Avaliação Cirúrgica:
-  Acionar cirurgião presencial para abdome em tábua, descompressão brusca positiva, dor em FID típica, suspeita de isquemia mesentérica.
+PASSO 2: A REGRA DA IDADE FÉRTIL
+  - Toda paciente do sexo feminino entre 10 e 50 anos DEVE realizar o teste rápido de Beta-hCG, independentemente da data da última menstruação ou negação de atividade sexual. Faça isso ANTES de liberar analgesia pesada, raio-X ou TC (Ver Protocolo 06).
 
-Analgesia: NÃO mascara o diagnóstico cirúrgico em níveis clinicamente relevantes. O paciente tem direito ao alívio.
-  Leve/Moderada: Dipirona 1g IV; Buscopan Composto IV.
-  Forte: Tramadol 50-100mg IV (diluído, infusão lenta). Morfina para casos intensos avaliados.
+PASSO 3: ANALGESIA RACIONAL (O MITO CAIU)
+  - MITO: "Não pode dar analgésico forte antes do cirurgião ver porque mascara o quadro."
+  - VERDADE: A literatura mundial (ATLS, Cochrane) prova que analgesia (mesmo opioides) não mascara os sinais de irritação peritoneal e melhora a cooperação do paciente no exame físico.
+  - Dor Cólica Leve/Moderada: Dipirona 1g IV + Escopolamina (Buscopan) 20mg IV.
+  - Dor Inflamatória (Suspeita de cólica nefrética/biliar): Cetoprofeno 100mg IV (O AINE tem resposta superior ao opioide na cólica nefrética, desde que não haja contraindicação renal ou sangramento).
+  - Dor Intensa: Tramadol 50-100mg IV (diluir em 100mL de SF e correr em 20 min para evitar náuseas) + Ondansetrona 8mg IV.
+  - Dor Excruciante/Refratária: Morfina 2 a 4mg IV lenta.
 
-Exames complementares baseados na disponibilidade:
-  EAS Fita para afastar ITU ou sugerir litíase (sangue).
-  TC Abdome Sem Contraste: Útil para identificar pneumoperitônio, litíase ureteral e quadros obstrutivos evidentes. Tem limitação para apendicite inicial e isquemia.
-  Ancorar paciente no PA se o laudo do hemograma (horas) for estritamente necessário para decidir conduta clínica (ex: desvio à esquerda em suspeita de apendicite sem TC clara).
+PASSO 4: RACIOCÍNIO TOPOGRÁFICO E EXAMES DISPONÍVEIS
+
+  A. DOR EM FOSSA ILÍACA DIREITA (Suspeita de Apendicite)
+    - Clínica: Dor periumbilical que migra para FID, anorexia, febre baixa. Blumberg (+).
+    - Exames no PA: TC de Abdome SEM Contraste tem menor sensibilidade para apendicite inicial, mas pode evidenciar apêndice espessado (> 6mm), fecalito ou borramento da gordura periapendicular. Hemograma (que demora horas) pode ajudar com leucocitose + desvio.
+    - Conduta: Se muito típico, o diagnóstico é clínico. Deixe o paciente ancorado (dieta zero, hidratado e medicado) aguardando o cirurgião presencial.
+
+  B. DOR EM HIPOCÔNDRIO DIREITO (Suspeita Biliar)
+    - Clínica: Dor pós-prandial (gordura), contínua, sinal de Murphy (+), náuseas.
+    - Exames no PA: A TC sem contraste é PÉSSIMA para ver cálculo biliar (muitos são radiotransparentes), mas pode ver gás na parede, distensão da vesícula ou líquido perivesicular. Hemograma e enzimas demoram horas.
+    - Conduta: Analgesia + Antiespasmódico. Se dor prolongada (>6h), febre ou Murphy claro: suspeitar de Colecistite Aguda. Dieta zero, inicie Ceftriaxona 1g IV + Metronidazol 500mg IV e acione o cirurgião.
+
+  C. DOR EM FOSSA ILÍACA ESQUERDA (Suspeita de Diverticulite)
+    - Clínica: Paciente > 50 anos, dor contínua em FIE, mudança de hábito intestinal, febre.
+    - Exames no PA: A TC de Abdome SEM Contraste é EXCELENTE e é o PADRÃO-OURO aqui. Avalie espessamento de parede do cólon sigmoide, divertículos e presença de pneumoperitônio ou abscesso.
+    - Conduta: Sem abscesso ou perfuração na TC (Hinchey 1): Ciprofloxacino + Metronidazol (pode ser VO para casa se tolerar dieta e sem instabilidade). Com complicações na TC: Dieta zero, antibiótico IV e acionar cirurgião.
+
+  D. DOR EPIGÁSTRICA COM IRRADIAÇÃO PARA O DORSO (Suspeita de Pancreatite / Úlcera)
+    - ATENÇÃO: Faça um ECG para todo idoso ou diabético com queixa "epigástrica". Pode ser IAM de parede inferior.
+    - Pancreatite: Requer 2 de 3 critérios (clínica típica; Amilase/Lipase > 3x limite; Imagem). A Amilase/Lipase demoram 3-8h e a TC sem contraste subestima a gravidade nas primeiras 48h.
+    - Conduta de PA: Se alta suspeita clínica, não espere a Lipase. Inicie a pedra angular do tratamento: RESSUSCITAÇÃO VOLÊMICA AGRESSIVA (Ringer Lactato 250 a 500 mL/h nas primeiras 12-24h se o coração aguentar) + Analgesia forte (Opioide). Ancore o paciente até a chegada dos exames.
+
+  E. DOR LOMBAR/FLANCO IRRADIANDO PARA GENITÁLIA (Cólica Nefrética)
+    - Clínica: Inquietação (paciente não acha posição), dor lancinante, hematúria na fita reagente (EAS).
+    - Exames no PA: TC SEM Contraste é o PADRÃO-OURO absoluto para cálculo renal.
+    - Conduta: AINE (Cetoprofeno IV) é o melhor analgésico. Associar resgate com opioide. Se não houver sinais de ITU associada (febre, leucocitúria no EAS fita), tratar sintomas e pode ter alta com encaminhamento à urologia ambulatorial. Se cálculo obstrutivo + febre (Pielonefrite Obstrutiva): Urgência Urológica -> Ceftriaxona 2g IV + Transferência.
+
+PASSO 5: RX DE ROTINA DE ABDOME
+  - SÓ solicite se: 1) Suspeita de Obstrução Intestinal (busca de níveis hidroaéreos e distensão de alças); 2) Suspeita de Perfuração (RX de Tórax em ortostatismo ou Abdome incluindo cúpula frênica buscando pneumoperitônio); 3) Pesquisa de corpo estranho radiopaco. Fora destas 3 indicações, o RX de abdome não tem validade diagnóstica significativa.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 PROTOCOLO 14 — ARRITMIAS CARDÍACAS (ABORDAGEM AVANÇADA ACLS)
