@@ -1,425 +1,539 @@
 """
 protocolos.py
-Protocolos institucionais, medicações disponíveis e recursos do PA.
+Base de conhecimento clínico-institucional do PA.
 Hospital Geral São José — Contagem/MG
 """
 
 PROTOCOLOS_TEXTO = """
 ╔══════════════════════════════════════════════════════════════════════╗
-║  PROTOCOLOS INSTITUCIONAIS — HOSPITAL GERAL SÃO JOSÉ — CONTAGEM/MG  ║
-║  Pronto Atendimento de Clínica Médica                                ║
+║  CONTEXTO REAL DA UNIDADE — HOSPITAL GERAL SÃO JOSÉ                  ║
+║  Pronto Atendimento — Clínica Médica — Contagem/MG                   ║
 ╚══════════════════════════════════════════════════════════════════════╝
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-[A] MAPA COMPLETO DE RECURSOS — O QUE EXISTE E O QUE NÃO EXISTE
+EQUIPE MÉDICA DISPONÍVEL
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-EXAMES LABORATORIAIS (TOTAL: 3 — NENHUM OUTRO DISPONÍVEL):
-  1. Troponina I ou T (quantitativa)           → Resultado ~60-90min
-  2. EAS / Urina Tipo I                        → Resultado ~30min
-  3. Gasometria Arterial                       → Resultado ~15min
-     Parâmetros: pH, pCO2, pO2, HCO3, BE, SatO2, Lactato,
-                 Glicose, K+, Na+, Cl-, Hb, Hematócrito
+Clínico Geral: UM médico, sozinho, responsável por TODOS os casos de
+clínica médica do PA simultaneamente. É quem usa este sistema.
 
-GLICEMIA CAPILAR: HGT (imediato — disponível à beira-leito)
+Cirurgião Geral: Disponível presencialmente para casos triados para cirurgia
+(abdome agudo, trauma, procedimentos). Pode estar ausente em alguns plantões
+por falta de cobertura. Nunca assuma disponibilidade garantida.
 
-IMAGEM E MONITORIZAÇÃO (MÉDICO INTERPRETA SOZINHO):
-  4. ECG 12 derivações
-  5. Radiografia simples (Tórax PA/Perfil, Abdome)
-  6. TC sem contraste (Crânio, Tórax, Abdome/Pelve)
-
-⚠️ NÃO EXISTEM NESTE SERVIÇO — NUNCA SUGERIR:
-  ✗ Hemograma completo (leucócitos, plaquetas, Hb completa)
-  ✗ Função renal isolada (Creatinina, Ureia, Clearance)
-  ✗ Coagulograma (TP, INR, TTPA, D-dímero)
-  ✗ Bioquímica hepática (TGO, TGP, GGT, FA, Bilirrubinas)
-  ✗ Eletrólitos isolados (APENAS via Gasometria)
-  ✗ Proteína C-Reativa / VHS / Ferritina / Procalcitonina
-  ✗ CK / CK-MB isolados / BNP / NT-proBNP
-  ✗ Hormônios (TSH, T4L, Cortisol, βHCG quantitativo)
-  ✗ Culturas (Hemocultura, Urocultura específica)
-  ✗ TC com contraste / Angiotomografia
-  ✗ Ultrassonografia / Ecocardiograma / Doppler
-  ✗ Ressonância Magnética
-
-CAPACIDADE OPERACIONAL:
-  Equipe:     1 Clínico Geral | 1 Pediatra | 1 Cirurgião Geral (24h)
-  Internação: CAPACIDADE ZERO
-  Missão:     ESTABILIZAR → ALTA SEGURA ou TRANSFERÊNCIA
+Pediatra: Disponível presencialmente para atendimentos pediátricos triados.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-[B] PROTOCOLO 01 — DOR TORÁCICA / SÍNDROME CORONARIANA AGUDA
+EXAMES DISPONÍVEIS — DOIS NÍVEIS MUITO DIFERENTES
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-TRIAGEM: ECG em ≤ 10min da chegada — OBRIGATÓRIO EM QUALQUER DOR TORÁCICA
+NÍVEL 1 — POINT OF CARE (RESULTADO EM MINUTOS, NA SALA DE EMERGÊNCIA):
 
-IAMCSST (Supradesnivelamento ST ≥ 1mm em ≥ 2 derivações contíguas, ou BRE novo):
-  MONA IMEDIATO:
-  • Morfina 2-4mg IV lento (se dor ≥ 8/10 e PAS > 90mmHg)
-  • Oxigênio 2-4L/min máscara (se SpO2 < 94%)
-  • Nitrato 0,4mg SL (se PAS > 90mmHg) — repetir 3x a cada 5min
-  • AAS 300mg VO mastigado
-  ANTIAGREGAÇÃO: Clopidogrel 300mg VO (dose de ataque)
-  ANTICOAGULAÇÃO: HNF Bolus 60 UI/kg IV (máx 4000 UI) + Infusão 12 UI/kg/h
-  → ACIONAR VAGA ZERO PARA HEMODINÂMICA IMEDIATAMENTE
+  Gasometria arterial ou venosa — inclui obrigatoriamente:
+    pH, pCO2, pO2, HCO3, BE, SatO2, Lactato, Glicose,
+    Sódio (Na+), Potássio (K+), Cálcio iônico (Ca2+),
+    Hemoglobina (Hb) e Hematócrito (Ht)
 
-IAMSST / NSTEMI:
-  • AAS 200mg + Clopidogrel 300mg VO
-  • Enoxaparina 1mg/kg SC (ou HNF IV se alteração renal na gasometria)
-  • Troponina 0h e 3h seriada
-  • Troponina+ ou ECG alterado: TRANSFERÊNCIA URGENTE (2-4h)
-  • Troponina negativa + ECG normal: Alta com encaminhamento urgente cardiologia
+  Troponina quantitativa
+  Dímero-D quantitativo
+  EAS / Urina rotina — ATENÇÃO: apenas fita reativa (bioquímica).
+    NÃO inclui sedimento urinário nem microscopia.
+    Disponível: proteína, glicose, cetonas, sangue, nitritos,
+    esterase leucocitária, urobilinogênio, bilirrubina, pH urinário.
 
-DOR TORÁCICA BAIXO RISCO (HEART Score ≤ 3, sem fatores de alarme):
-  • Observação 3-6h + Troponina seriada
-  • AAS 100mg VO
-  • Alta com orientações + retorno em ambulatório
+  Testes Rápidos (qualitativo, resultado imediato):
+    Beta-hCG
+    Dengue NS1
+    Influenza A e B
+    Outros virais variados conforme disponibilidade no estoque
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-[C] PROTOCOLO 02 — DISPNEIA AGUDA
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NÍVEL 2 — LABORATÓRIO EXTERNO (RESULTADO EM HORAS — 3 a 8h):
 
-EDEMA AGUDO DE PULMÃO (EAP):
-  1. Posição ortostática (45-90°), O2 ≥ 10L/min máscara
-  2. Furosemida 40-80mg IV lento (2-5min) — se usa furosemida oral: dobrar dose
-  3. Nitrato SL 0,4mg (se PAS > 100mmHg) — repetir 3x a 5min
-  4. Morfina 2-4mg IV (se dor, sem hipotensão, sem DPOC)
-  5. Nitroprussiato IV se refratário (ver Protocolo HAS)
-  6. ECG + Troponina (excluir SCA como causa)
-  7. RX Tórax, Gasometria se SpO2 < 90%
-  → TRANSFERÊNCIA UTI: IOT iminente, choque cardiogênico, refratariedade
+  Hemograma completo
+  PCR (Proteína C-Reativa)
+  Ureia e Creatinina
+  Eletrólitos completos (quando necessário além da gasometria)
+  TGO, TGP, GamaGT, Fosfatase Alcalina, Bilirrubinas totais e frações
+  Amilase e Lipase
+  Coagulograma (TP/INR, TTPA)
+  Qualquer outro exame laboratorial de sangue de rotina
 
-EXACERBAÇÃO DPOC / ASMA GRAVE:
-  1. O2 CONTROLADO 1-2L/min cateter nasal (meta SpO2 88-92% no DPOC)
-  2. Salbutamol 5mg + Ipratrópio 0,5mg NBZ — repetir 3x a cada 20min
-  3. Dexametasona 10mg IV ou Metilprednisolona 125mg IV
-  4. Se bacteriana: Ceftriaxona 1-2g IV (apenas se internando; PA = não usar)
-  5. Aminofilina 5mg/kg IV em 30min → 0,5mg/kg/h manutenção
-  6. Gasometria se SpO2 < 92% após 1ª nebulização
-  → TRANSFERÊNCIA: pCO2 > 55mmHg, pH < 7,30, rebaixamento consciência
+  IMPACTO CLÍNICO CRÍTICO: Pacientes cuja alta ou internação depende
+  desses resultados precisam permanecer em observação, recebendo
+  tratamento empírico e sintomático, até a liberação dos laudos.
+  Isso é uma realidade operacional deste PA, não uma falha de conduta.
+
+IMAGEM — INTERPRETAÇÃO PELO PRÓPRIO PLANTONISTA:
+
+  ECG 12 derivações: laudado pelo médico plantonista na hora
+  Radiografia simples (Tórax, Abdome): laudada pelo médico plantonista
+  Tomografia Computadorizada: EXCLUSIVAMENTE SEM CONTRASTE.
+    Laudo do radiologista é muito demorado. À noite, não há radiologista.
+    A interpretação da TC bruta é feita exclusivamente pelo plantonista
+    ou em avaliação conjunta com o cirurgião geral (quando disponível).
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-[D] PROTOCOLO 03 — HIPERTENSÃO ARTERIAL
+RACIOCÍNIO COM RECURSOS ESCALONADOS — PRINCÍPIO FUNDAMENTAL
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-URGÊNCIA HIPERTENSIVA (PA elevada SEM lesão de órgão-alvo):
-  • Captopril 25mg SL ou VO → repetir em 30min se necessário
-  • Clonidina 0,1mg VO a cada 1h (máx 0,6mg) — NÃO usar em bradi/BAV
-  • Meta: Redução ≤ 25% nas primeiras 24-48h
-  • Observação 4-6h → Alta com ajuste da medicação habitual
+Para cada caso, raciocine em três horizontes de tempo:
 
-EMERGÊNCIA HIPERTENSIVA (PA elevada COM lesão de órgão-alvo):
-  Nitroprussiato de Sódio (PRIMEIRA ESCOLHA):
-  • Diluição: 50mg em 250mL SG5% = 200 mcg/mL
-  • ⚠️ PROTEGER DA LUZ (papel alumínio no frasco e equipo)
-  • Dose: iniciar 0,5 mcg/kg/min → titular até 10 mcg/kg/min
-  • Infusão: BOMBA DE INFUSÃO obrigatória
-  • Monitorar PA a cada 5min
-  • Máximo 72h de uso (risco de toxicidade por tiocianato)
+  AGORA (minutos): O que você decide com gasometria, troponina, dímero-D,
+  EAS fita, testes rápidos, ECG, RX e exame clínico. A maioria das decisões
+  urgentes pode e deve ser tomada com esses recursos.
 
-  Hidralazina IV (se sem bomba):
-  • 10-20mg IV lento a cada 20-30min até controle
-  • Início ação 10-20min; Duração 2-4h
+  EM 1 A 3 HORAS: Resultados dos POCT já disponíveis. Reavalie a hipótese,
+  ajuste a conduta e documente a reavaliação.
 
-  Meta Geral: Reduzir PAM em no máximo 25% na 1ª hora
-  → TRANSFERÊNCIA UTI: encefalopatia, instabilidade hemodinâmica
+  EM 3 A 8 HORAS: Laboratório externo disponível. Casos que genuinamente
+  precisam de hemograma, PCR ou enzimas para decisão de alta ou internação
+  devem ser ancorados na observação com tratamento empírico enquanto aguardam.
+  Não há vergonha nisso. É o fluxo correto desta unidade.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-[E] PROTOCOLO 04 — AVC AGUDO
+PROTOCOLO 01 — DOR TORÁCICA E SÍNDROME CORONARIANA AGUDA
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-AVALIAÇÃO SAMU DO AVC: Sorriso | Abraço | Mensagem (assimetria)
-PRIORIDADE: TC CRÂNIO SEM CONTRASTE — URGÊNCIA MÁXIMA
+ECG obrigatório nos primeiros 10 minutos de qualquer dor torácica.
+Troponina disponível imediatamente — coletar no primeiro contato.
 
-  1. ABC — via aérea, O2 (se SpO2 < 94%)
-  2. Decúbito 30°, acesso venoso, HGT
-  3. Tratar hipoglicemia (< 60 mg/dL): SG50% 50mL IV
-  4. ECG (fibrilação atrial como causa?)
-  5. TC CRÂNIO SEM CONTRASTE (disponível) → AFASTAR HEMORRAGIA
-  6. PA: NÃO reduzir se < 220/120 (exceto se candidato a rt-PA: meta < 185/110)
-  7. Temperatura: Paracetamol se febre (febre piora prognóstico neurológico)
-  8. Troponina se suspeita de causa cardioembólica
+IAMCSST (supra ST ≥ 1mm em ≥ 2 derivações contíguas ou BRE novo):
+  Morfina 2-4mg IV se dor ≥ 8/10 e PAS > 90mmHg.
+  Oxigênio máscara se SpO2 < 94%.
+  Nitrato 0,4mg SL se PAS > 90mmHg, repetir 3x a cada 5min.
+  AAS 300mg VO mastigado.
+  Clopidogrel 300mg VO.
+  HNF bolus 60 UI/kg IV (máx 4000 UI) + infusão 12 UI/kg/h.
+  ACIONAR VAGA ZERO PARA HEMODINÂMICA DE IMEDIATO.
 
-  Janela para trombólise (rt-PA): ≤ 4,5h do início
-  → TRANSFERÊNCIA URGENTE para Centro de AVC (manter janela aberta)
+IAMSST / NSTEMI (troponina elevada ou ECG com alterações isquêmicas):
+  AAS 200mg + Clopidogrel 300mg VO.
+  Enoxaparina 1mg/kg SC.
+  Troponina seriada 0h e 3h.
+  Transferência urgente se troponina positiva ou ECG alterado.
+  Se troponina negativa em 2 coletas e ECG normal: alta com
+  encaminhamento urgente para cardiologia.
 
-  AVC Hemorrágico (confirmado na TC):
-  • Meta PA < 140/90 mmHg (Hidralazina IV ou Nitroprussiato)
-  • → TRANSFERÊNCIA URGENTE para Neurocirurgia
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-[F] PROTOCOLO 05 — ANAFILAXIA
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-⚡ ADRENALINA É SEMPRE A PRIMEIRA MEDICAÇÃO — SEM EXCEÇÕES
-
-  Adrenalina 1:1000 → 0,3-0,5mg IM (coxa anterolateral)
-  Pode repetir a cada 5-10min (máx 3 doses)
-  ⚠️ NUNCA atrasar adrenalina para usar anti-histamínico!
-
-  POSIÇÃO:
-  • Hipotensão: Decúbito dorsal + MMII elevados
-  • Broncoespasmo: Semi-sentado 45°
-
-  SUPORTE:
-  • O2 10-15L/min máscara
-  • SF 0,9% 500-1000mL IV rápido (se hipotensão)
-  • Salbutamol NBZ se broncoespasmo persistente
-
-  MEDICAÇÕES COMPLEMENTARES (após adrenalina):
-  • Difenidramina 25-50mg IV lento (Anti-H1)
-  • Ranitidina 50mg IV lento (Anti-H2 — potencializa H1)
-  • Metilprednisolona 125mg IV (ou Dexametasona 10mg IV)
-
-  OBSERVAÇÃO OBRIGATÓRIA: mínimo 6-8h (risco de reação bifásica em 1-8h)
-  Alta: adrenalina IM para casa + orientação de uso + pulseira de alergia
+Dor torácica de baixo risco (HEART score ≤ 3):
+  Observação 3-6h, troponina seriada.
+  Alta com orientações e retorno ambulatorial se troponinas negativas.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-[G] PROTOCOLO 06 — CRISE CONVULSIVA / STATUS EPILEPTICUS
+PROTOCOLO 02 — TROMBOEMBOLIA PULMONAR E TVP (COM DÍMERO-D DISPONÍVEL)
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-FASE 1 (0-5min): Decúbito lateral | O2 máscara | Acesso venoso
-  HGT: Se < 60 → SG50% 50mL IV IMEDIATO
+Score de Wells para TEP — calcule sempre que suspeitar:
+  Sinais clínicos de TVP: +3
+  TEP mais provável que diagnóstico alternativo: +3
+  FC > 100bpm: +1,5
+  Imobilização ou cirurgia nas últimas 4 semanas: +1,5
+  TVP ou TEP prévia documentada: +1,5
+  Hemoptise: +1
+  Neoplasia ativa (em tratamento ou nos últimos 6 meses): +1
 
-FASE 2 (5-20min): BENZODIAZEPÍNICO
-  • Diazepam 10-20mg IV (2mg/min) — ⚠️ RISCO DE APNEIA — ter ambu na mão
-  • Sem acesso: Diazepam 10mg retal | Midazolam 10mg IM
+  Wells ≤ 4 (baixa probabilidade): Solicitar Dímero-D.
+    Dímero-D negativo → TEP improvável → investigar diagnóstico alternativo.
+    Dímero-D positivo → investigação adicional necessária.
+    TC de tórax SEM contraste tem baixa sensibilidade para TEP direta.
+    Se forte suspeita clínica com dímero positivo: anticoagulação empírica
+    + transferência para TC com contraste ou cintilografia.
 
-FASE 3 (20-40min): ANTIEPILÉPTICO
-  • Fenitoína 18-20mg/kg IV — máx 50mg/min (preferir 25mg/min)
-    - Diluir EM SF 0,9% (precipita em SG!)
-    - MONITORAÇÃO CARDÍACA CONTÍNUA (arritmia)
+  Wells > 4 (alta probabilidade): Dímero-D não é útil aqui.
+    Anticoagulação empírica imediata: Enoxaparina 1mg/kg SC.
+    Transferência para confirmação por imagem adequada.
+    Se instabilidade hemodinâmica (TEP maciça): trombólise sistêmica
+    conforme protocolo antes de transferir.
 
-FASE 4 (>40min — Status Refratário):
-  • Fenobarbital 20mg/kg IV (50-100mg/min)
-  • → IOT + TRANSFERÊNCIA UTI URGENTE
+Score de Wells para TVP:
+  Neoplasia ativa: +1
+  Paralisia, paresia ou imobilização recente de MMII: +1
+  Acamado > 3 dias ou cirurgia nas últimas 12 semanas: +1
+  Dor localizada ao longo do trajeto venoso profundo: +1
+  Edema de toda a perna: +1
+  Edema de panturrilha > 3cm comparado ao contralateral: +1
+  Edema depressível apenas no membro sintomático: +1
+  Colaterais venosas superficiais (não varicosas): +1
+  Diagnóstico alternativo pelo menos tão provável: -2
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-[H] PROTOCOLO 07 — CETOACIDOSE DIABÉTICA (CAD)
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-DIAGNÓSTICO PELA GASOMETRIA: HGT > 250 + pH < 7,30 + HCO3 < 18
-
-HIDRATAÇÃO:
-  • 1ª hora: SF 0,9% 1000mL em 60min
-  • 2ª-4ª hora: SF 0,9% 500mL/h
-  • Quando HGT < 250: trocar para SG5% 250mL/h
-
-INSULINA REGULAR:
-  ⚠️ NÃO INICIAR se K+ < 3,5 na gasometria
-  • Bolus: 0,1 UI/kg IV
-  • Infusão: 0,1 UI/kg/h (Diluição: 50 UI Ins. Regular em 50mL SF = 1UI/mL)
-  • Meta: Redução de 50-100mg/dL/hora no HGT
-
-REPOSIÇÃO DE POTÁSSIO (pela gasometria):
-  • K+ < 3,0:   40mEq KCl/h + ADIAR insulina
-  • K+ 3,0-3,5: 40mEq KCl/h + iniciar insulina concomitante
-  • K+ 3,5-5,0: 20-40mEq KCl na solução de hidratação
-  • K+ > 5,5:   Não repor; Reavaliação em 2h
-  (KCl 19,1% — ampola 10mL = 25mEq)
-
-BICARBONATO: APENAS se pH < 6,9
-  • 100mEq NaHCO3 8,4% em 400mL AD → infundir em 2h
-
-MONITORIZAÇÃO: Gasometria a cada 2-3h | HGT horário
-→ TRANSFERÊNCIA UTI: pH < 7,0 | K+ instável | Sem melhora em 4h | Glasgow < 14
+  Score ≤ 1: baixa probabilidade → Dímero-D.
+    Dímero-D negativo → TVP improvável.
+    Dímero-D positivo → US doppler (não disponível aqui) → transferência.
+  Score ≥ 2: probabilidade moderada a alta → anticoagular empiricamente +
+    transferência para US doppler venoso.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-[I] PROTOCOLO 08 — SEPSE E CHOQUE SÉPTICO
+PROTOCOLO 03 — DISPNEIA AGUDA
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-RECONHECIMENTO — qSOFA ≥ 2:
-  • FR ≥ 22irpm  |  Alteração mental (Glasgow)  |  PAS ≤ 100mmHg
-  Confirmar disfunção orgânica: LACTATO ≥ 2 na Gasometria
+Gasometria e ECG são os exames centrais na dispneia.
 
-BUNDLE 1ª HORA:
-  1. HGT + Gasometria (lactato inicial)
-  2. Acesso venoso calibroso | Coleta antes dos antibióticos
-  3. ANTIBIÓTICO EMPÍRICO EM ATÉ 1H:
-     - Foco Pulmonar: Ceftriaxona 2g IV + Azitromicina 500mg IV
-       (APENAS SE INTERNANDO; FORA DA INTERNAÇÃO = encaminhar)
-     - Foco Urinário: Ceftriaxona 2g IV (ou Cipro 400mg IV se risco ESBL)
-       (APENAS SE INTERNANDO)
-     - Foco Abdominal: Ceftriaxona 1g IV + Metronidazol 500mg IV
-       (APENAS SE INTERNANDO)
-     - Sem Foco: Ceftriaxona 2g IV + Metronidazol 500mg IV
-       (APENAS SE INTERNANDO)
-  4. Ressuscitação: 30mL/kg SF0,9% ou RL em 3h (≈2000mL para 70kg)
-  5. EAS (identificar foco urinário)
+Edema Agudo de Pulmão:
+  Posição ortostática ou semissentado. Oxigênio ≥ 10L/min máscara.
+  Furosemida 40-80mg IV lento. Dobrar a dose se já usa furosemida oral.
+  Nitrato SL 0,4mg se PAS > 100mmHg, repetir 3x a cada 5min.
+  Morfina 2-4mg IV se dor associada, sem hipotensão e sem DPOC.
+  ECG e Troponina para afastar SCA como causa.
+  Gasometria para avaliar gravidade e resposta.
+  Transferência para UTI se: IOT iminente, choque cardiogênico, refratariedade.
 
-CHOQUE SÉPTICO (PAS < 90 após volume + Lactato > 4):
-  Norepinefrina 0,01-3mcg/kg/min IV
-  • Diluição: 4mg em 250mL SG5% = 16mcg/mL
-  • Meta PAM ≥ 65mmHg
-  → TRANSFERÊNCIA UTI URGÊNCIA MÁXIMA
+Exacerbação de DPOC ou asma grave:
+  Oxigênio controlado: 1-2L/min cateter nasal, meta SpO2 88-92% no DPOC.
+  Salbutamol 5mg + Ipratrópio 0,5mg nebulização, repetir 3x a cada 20min.
+  Dexametasona 10mg IV ou Metilprednisolona 125mg IV.
+  Se componente infeccioso bacteriano e o paciente for internar ou transferir:
+    Ceftriaxona 1-2g IV (apenas se internação/transferência confirmada).
+  Aminofilina 5mg/kg IV em 30min se refratário às nebulizações.
+  Gasometria se SpO2 < 92% após primeira nebulização.
+  Transferência se pCO2 > 55, pH < 7,30 ou nível de consciência alterado.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-[J] PROTOCOLO 09 — DOR ABDOMINAL AGUDA
+PROTOCOLO 04 — HIPERTENSÃO ARTERIAL
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-SEMPRE ACIONAR CIRURGIÃO se: rigidez, peritonismo, Blumberg+, abdome agudo
+Urgência hipertensiva (PA elevada sem lesão de órgão-alvo):
+  Captopril 25mg SL ou VO, repetir em 30min se necessário.
+  Clonidina 0,1mg VO a cada 1h, máximo 0,6mg. Não usar em bradicardia ou BAV.
+  Meta: redução gradual em 24-48h. Não forçar queda rápida.
+  Observação 4-6h. Alta com ajuste da medicação habitual.
 
-ANALGESIA (NUNCA negar analgesia — não mascarar piora):
-  • Dipirona 1g IV em 100mL SF → infundir em 15min
-  • Cetoprofeno 100mg IV (se sem contraindicações renais/hemostasia)
-  • Buscopan 20mg IV + Dipirona (se cólica)
-  • Tramadol 100mg IV diluído em 100mL SF → 30min
-  • Morfina 2-4mg IV (dor intensa, cirurgia excluída)
-
-CÓLICA NEFRÉTICA:
-  • Dipirona 1g + Buscopan 20mg IV
-  • Cetoprofeno 100mg IV ou Tenoxicam 40mg IV
-  • Hidratação SF0,9% 500mL IV
-  • EAS (confirmar hematúria micro/macroscópica)
-  • TC abdome s/contraste (tamanho do cálculo, local)
-  • Alta: Analgésico VO + Tamsulosina 0,4mg/dia (se < 10mm) + retorno urologia
+Emergência hipertensiva (PA elevada com lesão de órgão-alvo confirmada):
+  Nitroprussiato de Sódio: 50mg em 250mL SG5% = 200 mcg/mL.
+    Proteger da luz com papel alumínio no frasco e equipo.
+    Iniciar 0,5 mcg/kg/min em bomba de infusão, titular até 10 mcg/kg/min.
+    Monitorar PA a cada 5min. Máximo 72h de uso.
+  Hidralazina IV se sem bomba disponível: 10-20mg IV lento a cada 20-30min.
+  Meta: redução máxima de 25% da PAM na primeira hora.
+  Transferência para UTI se encefalopatia ou instabilidade hemodinâmica.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-[K] PROTOCOLO 10 — ARRITMIAS CARDÍACAS
+PROTOCOLO 05 — AVC AGUDO
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-COM INSTABILIDADE (PAS < 90, síncope, EAP, dor torácica):
-  → CARDIOVERSÃO ELÉTRICA SINCRONIZADA IMEDIATA
-  FA/Flutter: 100-200J bifásico | TSV: 50-100J | TV c/ pulso: 100-200J
-  FV/TV sem pulso: DESFIBRILAÇÃO 200J + ACLS
+TC de crânio sem contraste é a prioridade absoluta para afastar hemorragia.
+O plantonista interpreta a TC. Para hemorragia o diagnóstico é visual e claro.
+Para isquemia nas primeiras horas a TC pode ser normal — clínica + tempo decidem.
 
-TAQUIARRITMIA ESTÁVEL:
-  TSV:
-  1. Manobra de Valsalva modificada (deitado + elevação MMII pós-manobra)
-  2. Adenosina 6mg IV bolus rápido + flush 20mL SF → 12mg → 12mg
-  3. Metoprolol 2,5-5mg IV lento (1mg/min) se falhar adenosina
-
-  FA com RVR (FC > 110):
-  1. Metoprolol 5mg IV (0,5mg/min, máx 3 doses de 5mg)
-  2. Amiodarona 300mg IV em 20-30min (FA recente < 48h ou FE reduzida)
-
-  TV monomórfica estável:
-  Amiodarona 150mg IV em 10min → 1mg/min por 6h → 0,5mg/min
-
-BRADICARDIA SINTOMÁTICA:
-  1. Atropina 0,5mg IV a cada 3-5min (máx 3mg)
-  2. Dopamina 2-10mcg/kg/min IV (200mg em 250mL SG5%)
-  3. → TRANSFERÊNCIA para implante de marcapasso
+  ABC, oxigênio se SpO2 < 94%. Decúbito 30 graus. HGT imediato.
+  Hipoglicemia corrigida com SG50% 50mL IV antes de qualquer outra conduta.
+  ECG para identificar FA como causa.
+  PA: não reduzir se < 220/120 sem trombólise.
+    Se candidato a rt-PA: meta < 185/110 antes de iniciar.
+  Temperatura: paracetamol se febre (temperatura prejudica neurônios isquêmicos).
+  Troponina: se suspeita de embolia cardiogênica.
+  Janela para trombólise: até 4,5h do início dos sintomas.
+    Transferência urgente para centro de AVC com a janela mantida aberta.
+  AVC hemorrágico confirmado na TC: meta PA < 140/90 com Hidralazina IV
+    ou Nitroprussiato. Transferência urgente para neurocirurgia.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-[L] PROTOCOLO 11 — INFECÇÕES SEXUALMENTE TRANSMISSÍVEIS (IST)
+PROTOCOLO 06 — GRAVIDEZ, BETA-hCG E EMERGÊNCIAS OBSTÉTRICAS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-GONORREIA (Neisseria gonorrhoeae):
-  Ceftriaxona 1-2g IV é PERMITIDA e recomendada para tratamento no PA
-  • Dose: Ceftriaxona 1g IV em dose única (ou 2g se epididimite/proctite)
-  • Diluição: Diluir 1g em 10mL SF; administrar IM lento ou IV em 3-5min
-  • Acompanhar com Azitromicina 1g VO dose única (ou 500mg 2x por 3 dias)
-  • EAS para confirmar, teste rápido HIV/sífilis
-  • Parceiro sexual: teste + tratamento
-  • Observação: 2-4h se sintomático grave (dor, febre)
-  • Alta: Orientações + retorno em 7 dias
+Beta-hCG rápido é obrigatório em toda mulher com potencial gestacional
+(dos 10 aos 50 anos) que apresente qualquer dos seguintes:
+  dor abdominal ou pélvica, sangramento vaginal, síncope ou hipotensão
+  sem causa clara, náuseas e vômitos sem diagnóstico definido.
 
-CLAMÍDIA (Chlamydia trachomatis):
-  • Azitromicina 1g VO dose única (PREFERÊNCIA no PA)
-  • Alt: Doxiciclina 100mg VO 2x por 7 dias (evitar gravidez)
-  • EAS, teste rápido HIV/sífilis
-  • Parceiro: teste + tratamento
-  • Retorno em 7-10 dias
+Beta-hCG positivo com dor abdominal ou pélvica: gravidez ectópica até
+prova em contrário. Avalie instabilidade hemodinâmica imediatamente.
+  Se instável: acionar cirurgião, dois acessos venosos calibrosos,
+    SF 0,9% em bolus, TC de abdome e pelve sem contraste (pode evidenciar
+    hematoma pélvico ou massa anexial), transferência urgente para hospital
+    com ginecologia e cirurgia de emergência.
+  Se estável: TC abdome/pelve sem contraste, manter observação,
+    transferência assim que confirmada suspeita de ectópica.
 
-HERPES GENITAL:
-  • Aciclovir 400mg VO 5x/dia por 7-10 dias (episódio agudo)
-  • Se gravidade extrema / primoinfecção grave: Aciclovir IV (internação)
-  • Analgesia: Dipirona ou Paracetamol
-  • Higiene local, banhos com água morna
-  • Retorno se piora
-
-⚠️ NOTA SOBRE CEFTRIAXONA E PA:
-  Ceftriaxona APENAS para:
-  1. Gonorreia (documentado ou suspeita forte com sintomas clássicos)
-  2. Sepse / Choque séptico / Casos que SERÃO INTERNADOS
-  FORA DESSES CENÁRIOS: usar outras opções de cobertura ou encaminhar para internação.
+Beta-hCG positivo sem dor, paciente estável:
+  Considerar gravidez inicial, ameaça de aborto, mola hidatiforme.
+  Orientações sobre sinais de alarme. Retorno imediato com ginecologia.
+  Alta segura se sem sangramento ativo e sinais vitais normais.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-[M] PROTOCOLO PEDIÁTRICO (Pediatra deve ser acionado)
+PROTOCOLO 07 — DENGUE E ARBOVIROSES (COM NS1 DISPONÍVEL)
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-FEBRE:
-  • Paracetamol 10-15mg/kg/dose VO a cada 6h (máx 75mg/kg/dia)
-  • Ibuprofeno 5-10mg/kg/dose VO a cada 8h (> 6 meses; máx 40mg/kg/dia)
-  • Dipirona 10-15mg/kg/dose VO/IV (avaliar individualmente)
-  ✗ NÃO usar AAS em < 12 anos (risco Síndrome de Reye)
+NS1 indicado: febre com até 5 dias de evolução e quadro sugestivo
+(mialgia intensa, cefaleia retroorbitária, exantema, artralgia, prostração).
 
-DESIDRATAÇÃO:
-  Leve-Moderada: TRO com SRO 50-100mL/kg em 4h
-  Grave (> 10% ou sinais de choque): RL 20mL/kg IV em bolus → repetir
+NS1 positivo = Dengue confirmada. Classificar:
 
-BRONCOESPASMO:
-  Salbutamol 0,15mg/kg (mín 1,25mg; máx 5mg) NBZ a cada 20min (3x)
-  Ipratrópio 0,25-0,5mg NBZ (primeiras 3 doses)
-  Prednisolona 1-2mg/kg VO (máx 40mg)
+Dengue sem sinais de alarme: hidratação oral supervisionada, paracetamol
+para febre e dor, alta com orientações detalhadas e retorno à UBS.
+Não usar AAS nem AINE — risco de sangramento.
 
-HOLLIDAY-SEGAR (manutenção EV):
-  < 10kg:  100mL/kg/dia
-  10-20kg: 1000mL + 50mL/kg para cada kg > 10kg
-  > 20kg:  1500mL + 20mL/kg para cada kg > 20kg
+Dengue com sinais de alarme (qualquer dos seguintes: dor abdominal intensa
+e contínua, vômitos persistentes, acúmulo de líquidos em cavidades, sangramento
+de mucosas, hipotensão postural, letargia ou agitação, hepatomegalia, hematócrito
+elevado com queda de plaquetas): ancorar em observação.
+  Enquanto aguarda hemograma externo: SF 0,9% 10-20mL/kg conforme tolerância.
+  Paracetamol. Hidratação venosa se vômitos. Reavaliação clínica a cada 2h.
+  Hemograma externo é ESSENCIAL aqui (plaquetopenia e hemoconcentração).
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-[N] FARMÁCIA DO PA — MEDICAMENTOS DISPONÍVEIS
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Dengue grave (choque, sangramento grave, disfunção orgânica): suporte
+hemodinâmico, transferência imediata.
 
-ANALGÉSICOS/ANTITÉRMICOS: Dipirona 500mg/mL amp | Paracetamol 200mg/mL gt /
-  750mg comp | Ibuprofeno 600mg comp | Cetoprofeno 100mg amp/comp |
-  Tramadol 50mg/mL amp | Morfina 10mg/mL amp | AAS 100/500mg comp |
-  Tenoxicam 40mg amp
-
-ANTIBIÓTICOS IV: Ceftriaxona 1g/2g amp | Ampicilina+Sulbactam 3g amp |
-  Metronidazol 500mg/100mL fr | Ciprofloxacino 200mg/100mL fr |
-  Vancomicina 500mg amp | Clindamicina 600mg amp | Azitromicina 500mg amp
-
-ANTIBIÓTICOS VO: Amoxicilina 500mg | Amox+Clavulanato 875/125mg |
-  Azitromicina 500mg | Ciprofloxacino 500mg | SMX/TMP 400/80mg |
-  Nitrofurantoína 100mg | Doxiciclina 100mg | Aciclovir 400mg
-
-CARDIOVASCULARES IV: Adrenalina 1mg/mL amp | Norepinefrina 4mg/4mL amp |
-  Dopamina 50mg/mL amp | Amiodarona 150mg/3mL amp | Adenosina 6mg/2mL amp |
-  Atropina 0,5mg/mL amp | Digoxina 0,5mg/2mL amp | Enalaprilato 1,25mg/mL amp |
-  Nitroprussiato 50mg amp | Furosemida 10mg/mL amp | Hidralazina 20mg amp
-
-CARDIOVASCULARES VO: AAS 100mg | Captopril 25mg | Enalapril 10mg |
-  Atenolol 50mg | Metoprolol 25mg/50mg | Furosemida 40mg |
-  Espironolactona 25/50mg | Nifedipino retard 30mg | Clonidina 0,1mg |
-  Isossorbida SL 5mg | Nitrato Spray 0,4mg
-
-ANTICOAGULANTES: Enoxaparina 20/40/60/80/100mg seringas | HNF 5000UI/mL amp
-
-NEUROLÓGICO: Diazepam 5mg/mL amp | Midazolam 5mg/mL amp |
-  Fenitoína 50mg/mL amp | Fenobarbital 100mg/mL amp |
-  Haloperidol 5mg/mL amp | Clonazepam gotas
-
-ENDOCRINOLOGIA: Insulina Regular IV/SC | Insulina NPH SC |
-  SG50% amp 10mL | Glucagon kit | Glibenclamida | Metformina
-
-ALÉRGICO/INFLAMATÓRIO: Adrenalina 1:1000 | Difenidramina 25mg/mL amp |
-  Prometazina 25mg/mL amp | Dexametasona 4mg/mL amp |
-  Metilprednisolona 125/500mg fr
-
-GASTRO/ANTIEMÉTICO: Ondansetrona 4mg/2mL amp | Metoclopramida 10mg/2mL amp |
-  Pantoprazol 40mg amp | Omeprazol 20mg comp | Ranitidina 50mg amp |
-  Butilescopolamina 20mg amp | Domperidona 10mg comp
-
-BRONCODILATADORES: Salbutamol 5mg/mL NBZ | Ipratrópio 0,25mg/mL NBZ |
-  Aminofilina 240mg/10mL amp | Fenoterol NBZ
-
-SOLUÇÕES: SF0,9% 100/250/500/1000mL | SG5% 100/250/500mL | SG10% 500mL |
-  RL 500/1000mL | SG50% 250mL | KCl 19,1% amp | NaHCO3 8,4% amp | AD 10mL
+NS1 negativo nos primeiros 5 dias não exclui dengue. Se quadro sugestivo
+e NS1 negativo, tratar como dengue provável, coletar sorologia (IgM/IgG)
+para confirmação posterior e orientar retorno se piora.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-[O] CRITÉRIOS ABSOLUTOS DE TRANSFERÊNCIA (Acionar Vaga Zero / SUS Fácil)
+PROTOCOLO 08 — INFLUENZA E SÍNDROME GRIPAL
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-  • IAMCSST / IAMSST instável → Hemodinâmica
-  • Choque cardiogênico / Choque séptico → UTI
-  • AVC isquêmico em janela / AVC hemorrágico → Centro AVC / Neurocirurgia
-  • Status epilepticus refratário → UTI Neurológica
-  • CAD grave (pH < 7,0, K+ instável) → UTI
-  • IOT / VM necessária → UTI
-  • Cirurgia de emergência → Hospital Cirúrgico referência
-  • Instabilidade hemodinâmica refratária → UTI
-  • Qualquer condição que exija monitorização intensiva > 12h
+Teste rápido para Influenza A e B disponível. Indicar em:
+  quadro gripal típico em época de circulação do vírus, ou qualquer paciente
+  de grupo de risco com febre e síndrome respiratória aguda.
+
+Teste positivo em paciente de grupo de risco (idosos, gestantes,
+imunodeprimidos, cardiopatas, pneumopatas, obesos mórbidos):
+  Oseltamivir 75mg VO 12/12h por 5 dias. Iniciar em até 48h do início.
+  Paracetamol para febre e mialgia.
+  Se SpO2 < 93% ou FR > 24: radiografia de tórax para afastar pneumonia.
+  Avaliar internação ou transferência se saturaçao cair, dispneia ou
+  comprometimento radiológico bilateral.
+
+Teste positivo em paciente sem grupo de risco e sem critérios de gravidade:
+  Tratamento sintomático. Oseltamivir pode ser considerado mas não é obrigatório.
+  Alta com orientações. Retorno se piora.
+
+Teste negativo não exclui influenza nos primeiros dias.
+Se quadro muito sugestivo e paciente de alto risco: tratar empiricamente.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PROTOCOLO 09 — ANAFILAXIA
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Adrenalina é sempre a primeira medicação. Sem exceção.
+Adrenalina 1:1000, 0,3-0,5mg IM na coxa anterolateral. Repetir a cada 5-10min.
+Nunca atrasar adrenalina para usar anti-histamínico primeiro.
+
+Hipotensão: decúbito dorsal com MMII elevados.
+Broncoespasmo predominante: semissentado 45 graus.
+Oxigênio 10-15L/min máscara. SF 0,9% 500-1000mL IV rápido se hipotensão.
+Salbutamol nebulização se broncoespasmo persistente após adrenalina.
+Difenidramina 25-50mg IV lento + Ranitidina 50mg IV lento (complementar).
+Metilprednisolona 125mg IV ou Dexametasona 10mg IV.
+
+Observação mínima de 6-8h pelo risco de reação bifásica.
+Alta somente com sintomas totalmente resolvidos.
+Prescrever adrenalina IM para casa e orientar uso.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PROTOCOLO 10 — CRISE CONVULSIVA E STATUS EPILEPTICUS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Fase 1 (0-5min): decúbito lateral, via aérea, oxigênio, acesso venoso.
+  HGT imediato. Se < 60 mg/dL: SG50% 50mL IV antes de qualquer outra conduta.
+
+Fase 2 (5-20min): benzodiazepínico.
+  Diazepam 10-20mg IV na velocidade de 2mg/min. Risco de apneia — ter ambu.
+  Sem acesso venoso: Diazepam 10mg retal ou Midazolam 10mg IM.
+
+Fase 3 (20-40min): antiepiléptico de segunda linha.
+  Fenitoína 18-20mg/kg IV, velocidade máxima 50mg/min (preferir 25mg/min).
+  Diluir obrigatoriamente em SF 0,9%. Precipita em SG. Monitorar cardíaco.
+
+Fase 4 (status refratário acima de 40min):
+  Fenobarbital 20mg/kg IV. Preparar para IOT. Transferência urgente para UTI.
+
+Investigar sempre: HGT, EAS (se suspeita de foco infeccioso), TC de crânio.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PROTOCOLO 11 — CETOACIDOSE DIABÉTICA
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Diagnóstico pela gasometria: HGT > 250 + pH < 7,30 + HCO3 < 18.
+
+Hidratação: SF 0,9% 1000mL na primeira hora, 500mL/h nas 2-4h seguintes.
+  Trocar para SG5% quando HGT < 250mg/dL.
+
+Insulina regular: não iniciar se K+ < 3,5 na gasometria.
+  Bolus 0,1 UI/kg IV, depois infusão 0,1 UI/kg/h.
+  Diluição da infusão: 50 UI de Insulina Regular em 50mL de SF = 1 UI/mL.
+  Meta: queda de 50-100mg/dL/hora no HGT.
+
+Reposição de potássio pela gasometria:
+  K+ < 3,0: 40mEq/h, adiar insulina.
+  K+ 3,0-3,5: 40mEq/h, iniciar insulina junto.
+  K+ 3,5-5,0: 20-40mEq na solução de hidratação.
+  K+ > 5,5: não repor, reavaliar em 2h.
+  KCl 19,1% — ampola de 10mL = 25mEq.
+
+Bicarbonato: apenas se pH < 6,9. 100mEq em 400mL AD em 2h.
+Monitorar gasometria a cada 2-3h e HGT horário.
+Transferência se pH < 7,0, K+ instável, Glasgow < 14 ou sem melhora em 4h.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PROTOCOLO 12 — SEPSE E CHOQUE SÉPTICO
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+qSOFA para triagem: FR ≥ 22irpm, alteração do nível de consciência, PAS ≤ 100mmHg.
+Confirmar disfunção orgânica pelo Lactato na gasometria (Lactato ≥ 2 mmol/L).
+
+Hemograma é exame externo e demorará horas. Não espere por ele para iniciar
+o tratamento. A decisão de tratar sepse é clínica + gasometria, não laboratorial.
+
+Bundle na primeira hora:
+  Gasometria para lactato e estado metabólico basal.
+  Acesso venoso calibroso.
+  Antibiótico empírico em até 1h (coletar antes, mas não atrasar por coleta):
+    Foco pulmonar: Ceftriaxona 2g IV + Azitromicina 500mg IV.
+      (Ceftriaxona aqui é permitida pois é caso de internação/transferência)
+    Foco urinário: Ceftriaxona 2g IV (Ciprofloxacino 400mg IV se risco ESBL).
+    Foco abdominal: Ceftriaxona 1g IV + Metronidazol 500mg IV.
+    Sem foco definido: Ceftriaxona 2g IV + Metronidazol 500mg IV.
+  Ressuscitação volêmica: 30mL/kg SF0,9% ou Ringer Lactato em 3h.
+  EAS para avaliar foco urinário.
+  Hemograma, PCR e outros externos são solicitados para acompanhamento,
+    mas o tratamento já deve estar em curso quando chegarem.
+
+Choque séptico (PAS < 90 após 30mL/kg + Lactato > 4):
+  Norepinefrina 0,01-3 mcg/kg/min IV em bomba. Meta PAM ≥ 65mmHg.
+  Diluição: 4mg em 250mL SG5% = 16 mcg/mL.
+  Transferência para UTI urgente.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PROTOCOLO 13 — DOR ABDOMINAL AGUDA
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Beta-hCG obrigatório em toda mulher com potencial gestacional antes de
+qualquer outra conduta — ver Protocolo 06.
+
+Acionar cirurgião se: rigidez abdominal, peritonismo, Blumberg positivo,
+dor intensa em fossa ilíaca direita, massas pulsáteis, trauma.
+
+Analgesia: nunca negar. Analgesia não mascara abdome cirúrgico de forma clinicamente
+relevante nas doses terapêuticas habituais.
+  Dipirona 1g IV em 100mL SF em 15min.
+  Cetoprofeno 100mg IV se sem contraindicações renais ou hemostáticas.
+  Buscopan 20mg IV + Dipirona para cólicas.
+  Tramadol 100mg IV em 100mL SF em 30min para dor moderada a intensa.
+  Morfina 2-4mg IV para dor intensa quando diagnóstico cirúrgico foi avaliado.
+
+Sobre os exames disponíveis para dor abdominal:
+  EAS: identifica ITU, nefrolitíase com hematúria, glicosúria.
+  TC abdome sem contraste: excelente para nefrolitíase e pneumoperitônio.
+    Para apendicite, a sensibilidade do TC sem contraste é inferior ao com contraste.
+    Para pancreatite aguda: TC sem contraste pode mostrar edema pancreático e
+    coleções, mas subestima necrose. Amilase e Lipase são externos e demoram.
+  Hemograma e PCR: externos, demoram horas. Ancore o paciente, trate o sintoma,
+    aguarde o resultado para decidir internação ou alta.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PROTOCOLO 14 — ARRITMIAS CARDÍACAS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Com instabilidade (PAS < 90, síncope, EAP ou dor torácica associada):
+  Cardioversão elétrica sincronizada imediata.
+  FA ou Flutter: 100-200J bifásico. TSV: 50-100J. TV com pulso: 100-200J.
+  FV ou TV sem pulso: desfibrilação 200J + ACLS.
+
+Taquiarritmia estável:
+  TSV: manobra de Valsalva modificada primeiro. Adenosina 6mg IV bolus rápido
+    com flush imediato de 20mL SF. Segunda dose 12mg. Terceira dose 12mg.
+    Se falhar: Metoprolol 2,5-5mg IV lento (1mg/min).
+  FA com RVR acima de 110bpm: Metoprolol 5mg IV (0,5mg/min, máx 3 doses de 5mg).
+    Se FA recente < 48h ou FE reduzida: Amiodarona 300mg IV em 20-30min.
+  TV monomórfica estável: Amiodarona 150mg IV em 10min, depois 1mg/min por 6h.
+
+Bradicardia sintomática: Atropina 0,5mg IV, repetir a cada 3-5min até 3mg.
+  Se refratária: Dopamina 2-10 mcg/kg/min. Transferência para marcapasso.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PROTOCOLO 15 — IST E INFECÇÕES GENITURINÁRIAS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Infecção do Trato Urinário baixa (cistite):
+  EAS fita: nitritos positivos e esterase leucocitária positiva em mulher
+  sintomática já é suficiente para diagnóstico e início do tratamento.
+  Sem microscopia disponível aqui. O diagnóstico é clínico + fita reativa.
+  Nitrofurantoína 100mg VO 6/6h por 5 dias ou SMX/TMP 800/160mg VO 12/12h por 3-7 dias.
+  Ciprofloxacino 500mg VO 12/12h por 3-7 dias (preferir se pielonefrite).
+
+Pielonefrite leve a moderada (sem sepse):
+  EAS com leucocitúria, nitritos, proteinúria discreta.
+  Ciprofloxacino 500mg VO 12/12h por 10-14 dias se tolerando VO.
+  Analgesia: Dipirona ou Paracetamol. AINE com cautela.
+  Se vômitos: manter em observação, hidratação IV, reavaliar VO em 2-4h.
+  Hemograma e PCR externos úteis para confirmar gravidade, mas não bloqueiam
+  o início do tratamento.
+
+Gonorreia:
+  Ceftriaxona 1g IV ou IM dose única.
+  Azitromicina 1g VO dose única concomitante.
+  Esta é uma das indicações aceitas de Ceftriaxona sem internação neste PA.
+
+ITU de repetição, ITU em gestante ou suspeita de germe resistente:
+  Ancorar em observação. Aguardar urinocultura (externa) para ajuste.
+  Iniciar tratamento empírico enquanto aguarda.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PROTOCOLO PEDIÁTRICO
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Pediatra disponível — acionar para todos os casos pediátricos triados.
+Se pediatra ausente naquele plantão, condutas básicas:
+
+Febre: Paracetamol 10-15mg/kg/dose VO a cada 6h, máximo 75mg/kg/dia.
+  Ibuprofeno 5-10mg/kg/dose VO a cada 8h (acima de 6 meses), máximo 40mg/kg/dia.
+  Dipirona 10-15mg/kg/dose VO ou IV.
+  Nunca usar AAS em menores de 12 anos.
+
+Desidratação leve a moderada: TRO com SRO, 50-100mL/kg em 4h.
+Desidratação grave com sinais de choque: Ringer Lactato 20mL/kg IV em bolus, repetir.
+
+Broncoespasmo: Salbutamol 0,15mg/kg nebulização (mínimo 1,25mg, máximo 5mg)
+  a cada 20min por 3 vezes. Ipratrópio 0,25-0,5mg nas primeiras 3 doses.
+  Prednisolona 1-2mg/kg VO.
+
+Holliday-Segar: < 10kg: 100mL/kg/dia. 10-20kg: 1000mL + 50mL/kg por kg acima de 10.
+  > 20kg: 1500mL + 20mL/kg por kg acima de 20.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+FARMÁCIA DO PA — MEDICAMENTOS DISPONÍVEIS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Analgésicos e antitérmicos: Dipirona, Paracetamol, Ibuprofeno, Cetoprofeno,
+Tenoxicam, Tramadol, Morfina, AAS.
+
+Antibióticos IV: Ceftriaxona, Ampicilina+Sulbactam, Metronidazol,
+Ciprofloxacino, Vancomicina, Clindamicina, Azitromicina.
+
+Antibióticos VO: Amoxicilina, Amox+Clavulanato, Azitromicina, Ciprofloxacino,
+SMX/TMP, Nitrofurantoína, Doxiciclina, Aciclovir.
+
+Cardiovasculares IV: Adrenalina, Norepinefrina, Dopamina, Amiodarona,
+Adenosina, Atropina, Digoxina, Enalaprilato, Nitroprussiato, Furosemida, Hidralazina.
+
+Cardiovasculares VO: AAS, Captopril, Enalapril, Atenolol, Metoprolol,
+Furosemida, Espironolactona, Nifedipino retard, Clonidina, Nitrato SL e spray.
+
+Anticoagulantes: Enoxaparina (seringas 20 a 100mg), HNF.
+
+Neurológico: Diazepam, Midazolam, Fenitoína, Fenobarbital, Haloperidol, Clonazepam.
+
+Endocrinologia: Insulina Regular, Insulina NPH, SG50% ampola, Glucagon kit.
+
+Alérgico e inflamatório: Difenidramina, Prometazina, Dexametasona,
+Metilprednisolona, Adrenalina 1:1000.
+
+Gastro e antiemético: Ondansetrona, Metoclopramida, Pantoprazol IV,
+Omeprazol VO, Ranitidina, Buscopan, Domperidona.
+
+Broncodilatadores: Salbutamol NBZ, Ipratrópio NBZ, Aminofilina IV, Fenoterol NBZ.
+
+Antiviral: Oseltamivir 75mg.
+
+Soluções: SF0,9% todos os volumes, SG5%, SG10%, SG50%, Ringer Lactato, KCl, NaHCO3, AD.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+CRITÉRIOS DE TRANSFERÊNCIA IMEDIATA
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Transferir sem hesitar quando houver: IAMCSST, choque cardiogênico,
+choque séptico refratário, AVC em janela terapêutica ou hemorrágico,
+TEP de alto risco, status epilepticus refratário, CAD grave com pH < 7,0,
+necessidade de IOT e ventilação mecânica, suspeita de gravidez ectópica rota,
+necessidade de cirurgia de emergência que ultrapasse a capacidade local,
+qualquer condição que exija UTI ou monitorização intensiva prolongada.
 """
